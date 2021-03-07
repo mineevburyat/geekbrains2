@@ -80,7 +80,7 @@ body {
   color: #F16D7F;
 }
 
-/* Sale Sector - h2 heading */
+/* SALE SECTION */
 .sale {
   margin-top: 100px;
 }
@@ -146,7 +146,7 @@ body {
   text-align: center;
 }
 
-/* Futured Items sector */
+/* FUTURED ITEMS SECTOR */
 .SectFuturedItems {
   margin-top: 96px;
 }
@@ -204,12 +204,14 @@ body {
   width: 100%;
 }
 
+/* hover card item */
 .CardItem:hover .PhotoCard>img {
   filter: brightness(0.5);
 }
 .CardItem:hover .IconCart {
   display: flex;
 }
+/* end hover card item */
 
 .CardItem > h4 {
   font-weight: 400;
@@ -248,17 +250,17 @@ body {
   background: none;
   color: #F26376;
 }
-
+/* hover btn */
 .btnMoreItems:hover {
   background: #F26376;
   color: #ffffff;
 }
 
-/*    footer section */
+/*    FOOTER SECTION */
 footer {
   margin-top: 96px;
 } 
-/* top footer */
+/* TOP FOOTER */
 .top_footer {
   display: flex;
   justify-content: space-between;
@@ -293,7 +295,7 @@ footer {
   text-align: center;
   color: #FBFBFB;
 }
-/* middle footer */
+/* MIDDLE FOOTER */
 .middle_footer {
   background-image: url("../img/bg-footer.png");
   display: flex;
@@ -366,7 +368,7 @@ footer {
   color: #ffffff;
   background-color: #E05C6E;
 }
-/* bottom footer */
+/* BOTTOM FOOTER */
 .bottom_footer {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -380,6 +382,7 @@ footer {
   margin-right: 8px;
 }
 
+/* hover social btm */
 .socialnav>svg:hover path.bg {
   fill: #E05C6E;
 }
