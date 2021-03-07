@@ -80,12 +80,12 @@ body {
   color: #F16D7F;
 }
 
-/* Selection Sector - h2 heading */
-.select-section {
+/* Sale Sector - h2 heading */
+.sale {
   margin-top: 100px;
 }
 
-.select-section>.row-col-3 {
+.sale_top {
   display: flex;
   gap: 30px;
 }
@@ -105,7 +105,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
-
 }
 
 .bg-promo-1 {
@@ -121,7 +120,7 @@ body {
   background-image: url(../img/bg-promo-3.png);
 }
 
-.row-col-1 {
+.sale_bottom {
   width: 100%;
   height: 180px;
   margin-top: 30px;
@@ -131,7 +130,7 @@ body {
   background-image: url(../img/bg-promo-row.png);
 }
 
-.select-section p {
+.sale p {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -139,7 +138,7 @@ body {
   text-align: center;
 }
 
-.select-section h2 {
+.sale h2 {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
