@@ -179,8 +179,36 @@ body {
   background-color: #F8F8F8;;
 }
 
-.CardItem>img {
+.PhotoCard {
   width: 100%;
+  position: relative;
+}
+
+.IconCart {
+  display:none;
+  padding: 12px;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  border: 2px solid #ffffff;
+  width: 140px;
+}
+
+.cartText {
+  color: #ffffff;
+  margin-left: 12px;
+}
+
+.PhotoCard>img {
+  width: 100%;
+}
+
+.CardItem:hover .PhotoCard>img {
+  filter: brightness(0.5);
+}
+.CardItem:hover .IconCart {
+  display: flex;
 }
 
 .CardItem > h4 {
@@ -220,6 +248,12 @@ body {
   background: none;
   color: #F26376;
 }
+
+.btnMoreItems:hover {
+  background: #F26376;
+  color: #ffffff;
+}
+
 /*    footer section */
 footer {
   margin-top: 96px;
@@ -344,6 +378,10 @@ footer {
 
 .socialnav>svg {
   margin-right: 8px;
+}
+
+.socialnav>svg:hover path.bg {
+  fill: #E05C6E;
 }
 
 .copyright {
