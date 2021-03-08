@@ -368,8 +368,15 @@ footer {
   margin-left: -30px;
   border: none;
   color: #ffffff;
-  background-color: #E05C6E;
+  background-color: #F16D7F;
 }
+
+.middle_footer>form>input.submit:hover {
+  color: #ffffff;
+  background-color:  #E05C6E;
+}
+
+
 /* BOTTOM FOOTER */
 .bottom_footer {
   padding-top: 24px;
