@@ -21,6 +21,8 @@ body {
   align-items: center;
   background-color: #222222;
   color: #ccc;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .search-icon {
