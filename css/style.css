@@ -25,6 +25,9 @@ body {
   padding-bottom: 18px;
 }
 
+.header a {
+  display: inline-block;
+}
 .search-icon {
   margin-left: 40px;
 }
