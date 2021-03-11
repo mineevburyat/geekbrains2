@@ -7,6 +7,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .center {
@@ -180,8 +181,9 @@ body {
 }
 
 .CardItem {
-  max-width: 316px;
-  background-color: #F8F8F8;;
+  max-width: 326px;
+  background-color: #F8F8F8;
+  position: relative;
 }
 
 .PhotoCard {
@@ -189,15 +191,24 @@ body {
   position: relative;
 }
 
-.IconCart {
-  display:none;
+.PhotoCard img {
+  width: 100%;
+}
+
+
+/* hover card item and buttom*/
+
+.btn-AddCart {
+  display: none;
   padding: 12px;
   align-items: center;
+  background-color: rgba(216, 213, 213, 0.493);
   position: absolute;
-  top: 50%;
-  left: 20%;
+  top: 190px;
+  left: 90px;
   border: 2px solid #ffffff;
   width: 140px;
+  box-shadow: 5px 5px 5px 0 #222224;
 }
 
 .cartText {
@@ -205,48 +216,69 @@ body {
   margin-left: 12px;
 }
 
-.PhotoCard>img {
-  width: 100%;
-}
-
-/* hover card item */
-.CardItem:hover .PhotoCard>img {
+.CardItem:hover .PhotoCard a img {
   filter: brightness(0.5);
 }
-.CardItem:hover .IconCart {
+
+.CardItem:hover .btn-AddCart {
   display: flex;
 }
-/* end hover card item */
 
-.CardItem > h4 {
+.btn-AddCart:hover {
+  background-color: rgba(216, 213, 213, 1);
+  border: 2px solid #222222;
+}
+
+.btn-AddCart:hover .cartText {
+  color: #222222;
+}
+
+.btn-AddCart:hover >svg>path {
+  fill: #222222;
+}
+/* end hover card item */
+.TextCard {
+  margin-left: 18px;
+  margin-right: 18px;
+  
+  margin-bottom: 18px;
+}
+
+.TextCard > h4 {
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+.TextCard > h4 > a {
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom:12px;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   color: #000000;
-  margin-bottom: 12px;
-  margin-top: 24px;
-  margin-left: 18px;
 }
 
-.CardItem > p.description {
+.TextCard > p.description {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   color: #5D5D5D;
   margin-bottom: 18px;
-  margin-left: 18px;
+  
 }
 
-.CardItem > p.price {
+.TextCard > p.price {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
-  margin-left: 18px;
-  margin-bottom: 18px;
+  
+  
 }
 
 .btnMoreItems {
+  text-decoration: none;
   margin: 48px auto;
   display: block;
   width: 212px;
@@ -254,6 +286,7 @@ body {
   border: 1px solid #F26376;
   background: none;
   color: #F26376;
+  text-align: center;
 }
 /* hover btn */
 .btnMoreItems:hover {
