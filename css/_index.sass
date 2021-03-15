@@ -1,0 +1,342 @@
+.header 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color:  $blk_bg
+  //color: #ccc
+  padding-top: 18px
+  padding-bottom: 18px
+
+  & a 
+    display: inline-block
+
+  & .search-icon 
+    margin-left: 40px
+
+  & .header-icon:not(:last-child) 
+    margin-right: 32px
+
+.promo 
+  background-color:  $pig_bg
+  display: flex
+  align-items: center
+  padding-left: calc(50% -  #{$promo_width} / 2)
+  padding-right: calc(50% -  #{$promo_width} /2 )
+  
+  &_left 
+    max-width:  ($promo_width/2)
+  
+    & img 
+      width: 100%
+      margin-left: -100px
+
+  &_right 
+    margin-left: -20px
+
+    & h1
+        border-left: 12px solid $selectColor
+        padding-left: 16px
+        max-width: 408px
+
+    &_h1 
+      font-weight: 900
+      font-size: 48px
+      line-height: 58px
+      color:  $blk_bg
+
+    &_h2
+      font-weight: 400
+      font-size: 32px
+      line-height: 38px
+      color:  $blk_bg
+
+
+  &_color 
+    color: $selectColor
+
+.sale
+  margin-top: 100px
+
+  &_top 
+    display: flex 
+    gap: $gap 
+
+    .card
+      width: 360px
+      max-height: 260px
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
+      padding-top: 105px
+      padding-bottom: 105px
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column-reverse
+
+    .bg-promo-1 
+      background-image: url(../img/bg-promo-1.png)
+
+    .bg-promo-2 
+      background-image: url(../img/bg-promo-2.png)
+
+    .bg-promo-3
+      background-image: url(../img/bg-promo-3.png)
+
+  &_bottom 
+    width: 100%
+    margin-top: $gap
+    padding-top: 105px
+    padding-bottom: 105px
+
+  .bg-promo-row  
+    background-image: url(../img/bg-promo-row.png) 
+
+  p  
+    font-weight: 300 
+    font-size: 16px 
+    line-height: 19px 
+    color: $colorWhite 
+    text-align: center 
+  
+  h2  
+    font-weight: 400 
+    font-size: 24px 
+    line-height: 29px 
+    color: $selectColor
+    text-align: center 
+ 
+.FuturedItems  
+  margin-top: 96px 
+ 
+  &>h3  
+    text-align: center 
+    font-weight: 400 
+    font-size: 30px 
+    line-height: 36px 
+    color:  $blk_bg 
+ 
+  & > p  
+    font-weight: 300 
+    font-size: 14px 
+    line-height: 17px 
+    color: #9F9F9F 
+    text-align: center 
+    margin-bottom: 48px 
+
+  .box_cards  
+    display: grid 
+    gap: 30px 
+    grid-template-columns: 1fr 1fr 1fr 
+ 
+    .item  
+      max-width: 360px 
+      background-color: #F8F8F8 
+      position: relative 
+
+      &_photo  
+        width: 100% 
+        //position: relative 
+ 
+        img  
+          width: 100% 
+
+      &_textBlock  
+        margin-left: 18px 
+        margin-right: 18px 
+        margin-bottom: 18px 
+
+        &>h4
+          padding-top: 24px 
+          padding-bottom: 12px 
+ 
+          &>a
+            text-decoration: none 
+            padding-top: 24px 
+            padding-bottom: 12px 
+            font-weight: 400 
+            font-size: 13px 
+            line-height: 16px 
+            color: $blk_bg 
+ 
+        &>p
+          font-weight: 300 
+          font-size: 14px 
+          line-height: 17px 
+          color: #5D5D5D 
+          margin-bottom: 18px 
+
+        &>p.price
+          font-weight: 400 
+          font-size: 16px 
+          line-height: 19px 
+          color: $selectColor 
+
+      .btn_AddCart  
+        display: none 
+        padding: 12px 
+        align-items: center 
+        background-color: rgba(216, 213, 213, 0.493) 
+        position: absolute 
+        top: 190px 
+        left: 90px 
+        border: 2px solid #ffffff 
+        width: 140px 
+        box-shadow: 5px 5px 5px 0  $blk_bg 
+        
+        &:hover>svg>path  
+          fill:  $blk_bg 
+
+        &:hover  
+          background-color: rgba(216, 213, 213, 1) 
+          border: 2px solid  $blk_bg 
+
+        &:hover .cartText  
+            color:  $blk_bg
+
+        .cartText
+          color: #ffffff 
+          margin-left: 12px 
+
+    .item:hover .item_photo>a>img  
+      filter: brightness(0.5) 
+ 
+    .item:hover .btn_AddCart  
+      display: flex 
+ 
+  .btnMoreItems  
+    text-decoration: none 
+    margin: 48px auto 
+    display: block 
+    width: 212px 
+    padding: 15px 40px 
+    border: 1px solid #F26376 
+    background: none 
+    color: #F26376 
+    text-align: center 
+  
+    &:hover  
+      background: #F26376 
+      color: #ffffff 
+
+.service  
+  display: flex 
+  justify-content: space-between 
+  align-items: baseline 
+  padding-top: 103px 
+  padding-bottom: 103px 
+  background-color:  $blk_bg 
+ 
+  &_card  
+    max-width: 320px 
+    display: flex 
+    flex-direction: column 
+    align-items: center 
+    padding-left: 5px 
+    padding-right: 5px 
+
+    &>h4  
+      font-weight: 400 
+      font-size: 19.96px 
+      line-height: 24px 
+      color: #FBFBFB 
+      margin-top: 28px 
+      margin-bottom: 16px 
+  
+    &>p  
+      font-weight: 300 
+      font-size: 13.972px 
+      line-height: 17px 
+      text-align: center 
+      color: #FBFBFB 
+ 
+.footer  
+  margin-top: 0 
+
+  &_top
+    background-image: url("../img/bg-footer.png") 
+    display: flex 
+    justify-content: space-between 
+    padding-top: 100px 
+    background-size: cover 
+  
+    .aboutme  
+      width: 360px 
+      display: flex 
+      flex-direction: column 
+      align-items: center 
+
+      &>img
+        max-width: 96px 
+        margin-bottom: 30px 
+ 
+      &>p  
+        font-weight: 400 
+        font-size: 20px 
+        line-height: 24px 
+        text-align: center 
+        color:  $blk_bg 
+
+    &>form.feedback
+      padding-top: 50px 
+      text-align: center 
+      background: none 
+      padding-bottom: 160px
+    
+      &>h5  
+        font-weight: 900 
+        font-size: 24px 
+        line-height: 167% 
+        text-align: center 
+        color:  $blk_bg 
+      
+      &>label  
+        font-weight: 300 
+        font-size: 24px 
+        line-height: 167% 
+        text-align: center 
+        color:  $blk_bg 
+        display: block 
+        margin-bottom: 32px 
+        
+      &>input.email  
+        background-color: #E1E1E1 
+        padding: 7px 22px 
+        border-radius: 15px 
+        min-width: 322px 
+        border: none 
+        color:  $blk_bg 
+        
+      &>input.submit  
+          max-width: px 
+          padding: 7px 
+          border-radius: 0 15px 15px 0 
+          margin-left: -30px 
+          border: none 
+          color: #ffffff 
+          background-color: $selectColor 
+
+          &:hover  
+            color: #ffffff 
+            background-color:  #E05C6E 
+ 
+  &_bottom 
+    padding-top: 24px 
+    padding-bottom: 24px 
+    display: flex 
+    justify-content: space-between 
+    align-items: center 
+    background-color:  $blk_bg 
+  
+    .socialnav>svg  
+      margin-right: 8px 
+  
+      &:hover path.bg  
+        fill: #E05C6E 
+
+    .copyright  
+      font-weight: 300 
+      font-size: 16px 
+      line-height: 19px 
+      color: #FBFBFB 
+      padding-left: 10px 
