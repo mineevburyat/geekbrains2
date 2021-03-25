@@ -1,0 +1,35 @@
+.row {
+  display: flex;
+  height: 20px;
+}
+.row_left {
+  position: relative;
+}
+
+.filter>summary {
+  width: 50px;
+  background: none;
+}
+
+.filter {
+  margin-right: 150px;
+  width: 150px;
+  position: absolute;
+  background-color: #ccc;
+}
+
+.row_right {
+  position: relative;
+  left: 155px;
+}
+
+.row_right::before {
+  content: " ";
+  position: static;
+}
+
+.row_right>details {
+  position: absolute;
+  width: 50px;
+  z-index: 2;
+}

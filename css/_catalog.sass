@@ -28,14 +28,25 @@ summary
     list-style: none
     display: flex
 
-    &>li:after
+    &>li:not(:last-child):after
       content: '/'
+      padding-left: 8px
+      padding-right: 8px
 
+    &>li>a
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+
+        &.active_link
+          color: $selectColor
 .filters_row
   display: flex
   //padding-top: 50px
   padding-bottom: 64px
   position: relative
+  height: 20px
   
   .filter_main
     display: inline-block
@@ -98,4 +109,17 @@ summary
 
   .filter_other
     display: flex
+    position: relative
+    left: 390px
 
+    &>details>summary
+      margin-left: 28px
+
+    .size
+      width: 55px
+      z-index: 2
+      background-color: #FFFFFF
+
+      label
+        display: block
+        padding: 5px

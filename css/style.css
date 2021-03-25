@@ -516,8 +516,21 @@ summary::marker {
   display: flex;
 }
 
-.nav_right > ul > li:after {
+.nav_right > ul > li:not(:last-child):after {
   content: '/';
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.nav_right > ul > li > a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+
+.nav_right > ul > li > a.active_link {
+  color: #F16D7F;
 }
 
 .filters_row {
@@ -526,6 +539,7 @@ summary::marker {
   display: flex;
   padding-bottom: 64px;
   position: relative;
+  height: 20px;
 }
 
 .filters_row .filter_main {
@@ -601,5 +615,22 @@ summary::marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  left: 390px;
+}
+
+.filters_row .filter_other > details > summary {
+  margin-left: 28px;
+}
+
+.filters_row .filter_other .size {
+  width: 55px;
+  z-index: 2;
+  background-color: #FFFFFF;
+}
+
+.filters_row .filter_other .size label {
+  display: block;
+  padding: 5px;
 }
 /*# sourceMappingURL=style.css.map */
