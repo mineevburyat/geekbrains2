@@ -41,88 +41,116 @@ summary
 
         &.active_link
           color: $selectColor
-.filters_row
+.filters-row
   display: flex
   //padding-top: 50px
   padding-bottom: 64px
-  position: relative
   height: 20px
   
-  .filter_main
-    display: inline-block
+  &__left
     width: 360px
     margin-right: 30px
-    position: absolute
-    z-index: 2
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
-    background-color: #FFFFFF
+
+    .filter-main
+      display: inline-block
+      display: flex
+      position: relative
+      box-sizing: border-box
     
-    &>summary
-      font-weight: 900;
-      font-size: 14px;
-      line-height: 17px;
-      color: #EF5B70;
-      padding: 5px
-      border: none
+      &[open]
+        z-index: 2
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        background-color: #FFFFFF
+        position: absolute
+        width: 360px
+        box-sizing: border-box
+        
 
-      &::after
-        content: " "
-        background-image:  url("../img/filter-icon.svg")
-        background-size: 15px 10px
-        display: inline-block
-        height: 15px
-        width: 10px
-        background-repeat: no-repeat
-        margin-left: 10px
-        vertical-align: middle
-
-      &:active
+      &>summary
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 17px;
+        color: #EF5B70;
+        padding: 5px
         border: none
+        width: 360px
+        box-sizing: border-box
+        
+        &::after
+          content: " "
+          background-image:  url("../img/filter-icon.svg")
+          background-size: 15px 10px
+          display: inline-block
+          height: 15px
+          width: 10px
+          background-repeat: no-repeat
+          margin-left: 10px
+          vertical-align: middle
 
-    details.level2>summary
-      padding: 10px
-      color: $selectColor
-      border-left: 10px solid $selectColor
-      margin-bottom: 20px
-      font-weight: normal
-      font-size: 14px
-      line-height: 17px
-      color: #6F6E6E
-      border-bottom: 1px solid #ebebeb
+        &:active
+          border: none
 
-    details.level2>ul
-      list-style: none
-      margin-left: 30px
-      margin-bottom: 24px
+      details.level2>summary
+        padding: 10px
+        color: $selectColor
+        border-left: 10px solid $selectColor
+        margin-bottom: 20px
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        border-bottom: 1px solid #ebebeb
 
-      &>li
-        padding: 5px
+      details.level2>ul
+        list-style: none
+        margin-left: 30px
+        margin-bottom: 24px
 
-        &>a
-          font-weight: 300
-          font-size: 14px
-          line-height: 17px
-          color: #6F6E6E
+        &>li
+          padding: 5px
 
-          &:hover
-            color: $selectColor
+          &>a
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            color: #6F6E6E
 
-  .filter_other
+            &:hover
+              color: $selectColor
+
+  &__right
+    flex-grow: 2
     display: flex
-    position: relative
-    left: 390px
+    gap: 30px
+  
+    .f-container
+      
 
-    &>details>summary
-      margin-left: 28px
+      &__details
+        position: relative
+        
+      &__details[open]
+        display: flex
+        z-index: 2
+        background-color: #ffffff
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        position: absolute
 
-    .size
-      width: 55px
-      z-index: 2
-      background-color: #FFFFFF
+        &>label
+          display: block
+          margin: 5px
 
-      label
-        display: block
-        padding: 5px
+          &>input
+            margin: 5px
+    
+  .size
+    width: 60px
+
+  .tranding
+    width: 140px
+
+  .price
+    width: 140px
 
 .pagination
   border: 1px solid #ebebeb
