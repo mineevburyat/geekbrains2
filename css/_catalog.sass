@@ -84,10 +84,10 @@ summary
       color: $selectColor
       border-left: 10px solid $selectColor
       margin-bottom: 20px
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 17px;
-      color: #6F6E6E;
+      font-weight: normal
+      font-size: 14px
+      line-height: 17px
+      color: #6F6E6E
       border-bottom: 1px solid #ebebeb
 
     details.level2>ul
@@ -123,3 +123,31 @@ summary
       label
         display: block
         padding: 5px
+
+.pagination
+  border: 1px solid #ebebeb
+  padding: 15px
+  padding-bottom: 15px
+  width: 290px
+  margin: 48px auto
+
+  &_block
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  &__link
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #C4C4C4
+    margin-right: 15px
+    display: inline-block
+
+  &__link:last-child
+    margin-right: 0
+
+  &__link:hover
+    color: $selectColor
+.active
+  color: $selectColor
