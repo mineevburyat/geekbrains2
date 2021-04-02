@@ -872,4 +872,44 @@ summary::marker {
 .btnAddCart:hover .iconCart {
   fill: #ffffff;
 }
+
+.left-cartBox {
+  width: 650px;
+}
+
+.right-cartBox {
+  width: 360px;
+}
+
+.cartBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+}
+
+.addressBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.totalBox {
+  background-color: #e2e2e2;
+}
+
+.btnBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
 /*# sourceMappingURL=style.css.map */
