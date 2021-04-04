@@ -7,16 +7,173 @@
 .cartBox
   display: flex
   gap: 100px
+  margin-top: 80px
+  // margin-bottom: 120px
 
 .addressBox
   display: flex
   flex-direction: column
+  padding-top: 10px
+  margin-bottom: 58px
+
+  &__fildset
+    border: none
+
+  &__legend
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #222222
+
+  &__input
+    padding: 16px
+    margin-top: 24px
+    border: 1px solid #a4a4a4
+    background-color: #ffffff
+    font-weight: 300
+    font-size: 13px
+    line-height: 16px
+    color: #222222
+    width: 100%
+    box-sizing: border-box
+
+  &__submit
+    width: 110px
+    padding: 10px 8px
+    margin-top: 24px
+    background-color: #ffffff
+    font-weight: 300
+    font-size: 11px
+    line-height: 13px
+    color: #4A4A4A
+    border: 1px solid #a4a4a4
 
 .totalBox
-  background-color: #e2e2e2
+  background-color: #f5f3f3
+  width: 100%
+  border: 1px solid #222222
+  margin-bottom: 120px
+
+  &__pricelist
+    width: 275px
+    margin-left: auto
+    margin-top: 16px
+    margin-bottom: 16px
+    margin-right: 42px
+    padding-top: 20px
+    
+    border-bottom: 1px solid #e2e2e2
+    overflow: hidden
+
+  &__pricename
+    width: 70%
+    float: left
+    overflow: hidden
+    text-align: right
+    margin-bottom: 12px
+
+  &__price
+    width: 30%
+    float: left
+    overflow: hidden
+    text-align: right
+
+  &__btn
+    width: 275px
+    margin: 0 auto
+    display: block
+    padding: 16px 36px
+    margin-bottom: 42px
+    background-color: $selectColor
+    border: 1px solid #222222
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #222222
 
 .btnBox
   display: flex
   justify-content: space-between
   margin-top: 70px
   margin-bottom: 120px
+
+  &__btn
+    width: 275px
+    display: block
+    padding: 16px 36px
+    margin-bottom: 42px
+    background-color: #ffffff
+    border: 1px solid #a4a4a4
+    font-weight: 300
+    font-size: 14px
+    line-height: 14px
+    color: #000000
+
+  .grand
+  font-weight: 400
+  font-size: 16px
+  line-height: 19px
+  color: #222222
+
+.sub
+  font-weight: 300
+  font-size: 11px
+  line-height: 13px
+  color: #4A4A4A
+
+.cartItem
+  display: flex
+  // gap: 32px
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+  margin-bottom: 40px
+
+  &__imgBlock
+    max-height: 306px
+
+  &__txtBlock
+    padding: 5px
+    margin-top: 22px
+    margin-left: 32px
+
+  &__header
+    width: 280px
+    font-weight: 400
+    font-size: 24px
+    line-height: 29px
+    color: #222222
+    margin-bottom: 42px
+
+  &__descriptBlock
+    width: 160px
+    list-style: none
+    margin: 0
+    padding: 0
+    
+  &__descriptRow
+    margin-bottom: 8px
+    font-weight: 300
+    font-size: 22px
+    line-height: 26px
+    color: #6F6E6E
+
+  &_price
+    color: #EF5B70
+    margin-left: 6px
+  
+  &_value
+    margin-left: 6px
+
+  &__input
+    width: 45px
+    border: 1px solid #eaeaea
+    padding: 1px 16px
+    box-sizing: border-box
+    font-weight: 300
+    font-size: 22px
+    line-height: 26px
+    color: #6F6E6E
+
+  &__close
+    align-self: flex-start
+    margin-left: 30px
+    margin-top: 15px
