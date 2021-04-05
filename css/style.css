@@ -924,6 +924,12 @@ summary::marker {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.addressBox__input:hover {
+  border-bottom: 3px solid #a4a4a4;
 }
 
 .addressBox__submit {
@@ -936,6 +942,15 @@ summary::marker {
   line-height: 13px;
   color: #4A4A4A;
   border: 1px solid #a4a4a4;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.5, 1, 0.89, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.5, 1, 0.89, 1);
+  transition: transform 0.6s cubic-bezier(0.5, 1, 0.89, 1);
+  transition: transform 0.6s cubic-bezier(0.5, 1, 0.89, 1), -webkit-transform 0.6s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.addressBox__submit:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .totalBox {
@@ -983,6 +998,19 @@ summary::marker {
   font-size: 16px;
   line-height: 19px;
   color: #222222;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.totalBox__btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .btnBox {
@@ -1011,6 +1039,19 @@ summary::marker {
   font-size: 14px;
   line-height: 14px;
   color: #000000;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.btnBox__btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .sub {
@@ -1084,10 +1125,21 @@ summary::marker {
   color: #6F6E6E;
 }
 
+.cartItem__input:hover {
+  border-bottom: 3px solid #eaeaea;
+}
+
 .cartItem__close {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-left: 30px;
   margin-top: 15px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.cartItem__close:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 /*# sourceMappingURL=style.css.map */
